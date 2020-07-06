@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="eng">
+<!-- Answer to the questions from Logikcull for the Software Engineer Intern Position -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Answer to Questions</title>
+    <style>
+        body {
+            background-color: white;
+            padding: 20px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        header {
+            max-width: 800px;
+            margin: 0px 50px -30px 50px;
+        }
+
+        header h1 {
+            font-family: 'Poppins', sans-serif;
+            color: black;
+        }
+
+        .essay-container {
+            max-width: 900px;
+            margin: auto;
+            background-color: white;
+            border: 2px solid black;
+            box-shadow: 5px 5px 0 black;
+            padding: 20px 10px 20px 10px;
+        }
+
+        .essay {
+            font-size: 20px;
+            padding: 15px 15px 0 50px;
+            position: relative;
+            margin-bottom: 0;
+        }
+
+        p {
+            color: gray;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        .code {
+            padding: 15px 15px 0 50px;
+        }
+
+        footer,
+        h3 {
+            text-align: left;
+            padding: 0px 0px 10px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="essay-container">
+        <header>
+            <h1>Answers to your Questions</h1>
+        </header>
+        <div class="essay">
+            <h2>1. We look for candidates that embody the traits of our CTO, Sheng Yang. These attributes include:</br>
+            <ul>   
+            <li>Smart, not arrogant</li>
+            <li>Humble and hardworking</li>
+            <li>Entrepreneurial, not risk averse</li>
+            <li>Nice, and not disingenuous</li>
+            <li>Grit, and lots of it!</li></br>
+            </ul>
+            Select one of the above and tell us a story of how you exemplified this attribute.</br>
+             Don’t worry, we’ll get to the others in the recruiting process!
+            </h2>
+            <p>
+                Answer: I believe I have Grit. I always swim against the current and look at all situations with daring inquisitive eyes. I don't shy away from a challenge despite my many obstacles I am still a fighter.
+            </p>
+            <h2>2. Tell us about a moment from your past you feel helped shape who you are today.
+            </h2>
+            <p>
+                Answer: Moving to another country by myself not knowing the language was definitely a huge challenge that made me grow up real fast and gave me an appreciation for my own culture and a fresh prospective on my new one. 
+            </p>
+
+            <h2>3. Consider a problem you’ve addressed by writing code, and please share the following:</br>
+                <ul>
+                    <li>What was tricky about this problem?</li>
+<li>Why did this problem capture your imagination?</li>
+<li>What made you proud of the solution you created?</li>
+<li>How would you approach a similar problem next time?</li>
+</ul>
+            </h2>
+            <p>Answer: I built a cocktail app where you can search for alcoholic drinks and how to make them. I used
+            React, React Router and a third party API.
+            The app was pretty interesting to get working off such a poorly built API; However I took the challenge
+            head on, had issues rendering the data while ignoring null values. I searched far and wide, worked a few
+            variables, got help from my instructors until I forged the solution. I learned that most time you have
+            to work with a third party API, you have to build your app around it no matter how low its quality and documentation are.</p>
+            <p>It was interesting to see how this data needed to be told how to handle every output it had with code and logic.</p>
+            <p>My solution required a bit of learning, quick thinking and clever coding which made me really proud</p>
+            <p>In the future I plan to approach this code by analyzing the data structure batter, sudo-coding and planning my approach carefully</p>
+                        <a href="http://cocktail-recipe-app.herokuapp.com/">
+                            See Elixir | Drink Recipes App Here</a></br>
+                        
+                        <a href="https://github.com/rixiobarrios/cocktail-recipe">See GitHub Repository for app Here</a></br>
+                        <p>Code to Render "null" Value on Data:</p>
+                        <div class="code">
+                            <code>
+                                            const ingredients = [];</br>
+                                            function getRecipeIngredients() {</br>
+                                            let i = 1;</br>
+                                            while (recipe['strIngredient' + i]) {</br>
+                                                const name = recipe['strMeasure' + i];</br>
+                                                const measurement = recipe['strIngredient' + i];</br>ingredients.push(name + ' ' + measurement);</br>
+                                                 i++;</br> 
+                                                }
+                                        </code></div>
+            <footer>
+                <h3>Thank you very much for taking the time to look at my application<a
+                        href="https://www.rixiobarrios.com"> Rixio Barrios</a></h3>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
